@@ -14,3 +14,4 @@ class Engineer extends Employee {
         return this.getRole;
     }
 }
+module.exports = Engineer;
