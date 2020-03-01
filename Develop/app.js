@@ -14,7 +14,7 @@ const render = require('./lib/htmlRenderer');
 // and to create objects for each team member (using the correct classes as blueprints!)
 const inquirer = require('inquirer');
 
-inquirer
+return inquirer
 .prompt([
     {
         type: "input",
