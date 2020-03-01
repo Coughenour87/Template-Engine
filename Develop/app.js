@@ -12,6 +12,32 @@ const render = require('./lib/htmlRenderer');
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
+const inquirer = require('inquirer');
+
+inquirer
+.prompt([
+    {
+        type: "input",
+        message: "Enter your name",
+        name: "name"
+    },
+    {
+        type: "input",
+        message:"Enter email address",
+        name: "email"
+    },
+    {   
+        type: "input",
+        message: "Enter github username",
+        name: "github"
+    },
+    {
+        type: "input",
+        message: "Enter your role",
+        choices: "manager, engineer, intern"
+    }
+]);
+
 
 // HINT: each employee type (manager, engineer, or intern) has slightly different
 // information; write your code to ask different questions via inquirer depending on
