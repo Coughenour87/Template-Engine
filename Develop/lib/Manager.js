@@ -9,5 +9,9 @@ class Manager extends Employee {
     getOfficeNumber() {
         return this.getOfficeNumber;
     }
+    getManager() {
+        return this.getManager;
+    }
 }
+
 module.exports = Manager;
